@@ -2,8 +2,7 @@
 <link rel="stylesheet" href="<?php echo base_url()?>application/third_party/libs/css/prettyPhoto.css">
 
 <div class="container gallery">
-    <h2 class="page-title"><?php echo isset($record->title) ? $record->title : ''?></h2>
-
+    <h2 class="page-title"><?php echo isset($record->title)? $record->title : ''?></h2>
     <?php
     if (isset($picturelist) && !empty($picturelist)) {
         foreach($picturelist as $key => $value) { ?>            
